@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Restaurant - About Us</title>
+    <title>Fictional Restaurant - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
@@ -11,6 +11,8 @@
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
+            background-image: url(jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            background-size:contain;
         }
         header {
             background: #800000;
@@ -29,9 +31,24 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
+            gap: 100px;
+            
         }
         nav a:hover, nav a.active {
             background: #a00000;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('restaurant.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
         }
         .container {
             width: 90%;
@@ -42,13 +59,7 @@
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
             border-radius: 5px;
             margin-top: 20px;
-            align-items: center;
-        }
-        h2 {
-            color: #800000;
-        }
-        p {
-            line-height: 1.6;
+            text-align: center;
         }
         footer {
             background: #000;
@@ -64,19 +75,23 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Welcome to The Wooden Plate, where we bring culinary excellence and unforgettable dining experiences to life. Our journey began with a passion for exquisite flavors and exceptional hospitality.</p>
-        <p>At The Wooden Plate, we believe in using the freshest ingredients and crafting dishes that celebrate both tradition and innovation. Whether you're here for a casual meal, a special occasion, or just to indulge, our dedicated team is committed to making your visit extraordinary.</p>
-        <p>Come and experience the warmth of our hospitality and the richness of our flavors. We look forward to serving you!</p>
+    <div class="hero">
+        <h1>Welcome to The Wooden Plate</h1>
+        <p>Experience the finest flavors and warm hospitality</p>
     </div>
+    <div class="container">
+        <h2>Discover Our Menu</h2>
+        <p>Indulge in our delicious and carefully crafted dishes made with the freshest ingredients.</p>
+        <a href="menu.html" style="display: inline-block; background: #800000; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">View Menu</a>
+        </div>
     <footer>
-        <p>Contact us: (+254)780 007 469| sarah@gmail.com</p>
+        <p>Contact us: (+254)78 007 469| sarah@gmail.com</p>
         <p>Follow us on social media</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
